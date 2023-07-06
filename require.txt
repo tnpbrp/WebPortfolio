@@ -1,8 +1,0 @@
-Page
-* landing page , static with html,css,js
-    - Home
-    - About
-    - Skill
-    - Contact
-
-
