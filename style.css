@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(197 197 204);
+    display: flex;
+}
+
+div.content {
+    position: relative;
+}
+
+nav.navbar {
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d7f9cc;
+    color: chocolate;
+}
+
+ul.horizontal li {
+    padding: 0 10px;
+    float: left;
+}
+
+.content {
+    color: #008afa;
+}
+
+.mouse-pointer {
+    cursor: pointer;
+}
+
+.logo {
+    padding: 0 15px;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: url('twilight-cloud.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-img img {
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+.welcome {
+    padding: 70px 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.welcome p {}
+
+/* #text {
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+#text::after {
+    content: ".|";
+    animation: blinkCursor 1s infinite;
+}
+@keyframes blinkCursor {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* debug layout style */
+.debug-boder {
+    border: blue 2px solid;
+}
