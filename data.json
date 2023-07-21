@@ -1,5 +1,18 @@
 {
     "name":"th",
-    "asd":""
+    "skill":[
+    {
+        "title":"HTML",
+        "image-src":""
+    },
+    {
+        "title":"CSS",
+        "image-src":""
+    },
+    {
+        "title":"JavaScript",
+        "image-src":""
+    }
+]
 
 }
