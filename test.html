@@ -1,4 +1,13 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>WPT</title>
+  <style>
+    * {
     padding: 0;
     margin: 0;
 }
@@ -6,32 +15,6 @@
 html,
 body {
     min-height: 100vh;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.my-social {
-    justify-content: center;
-}
-
-.header {
-    background-color: #3498db;
-    background-image: url("/images/BG4.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit: unset;
-    background-position: center;
 }
 
 .navbar {
@@ -49,9 +32,9 @@ ul.horizontal {
     padding: 0;
     overflow: hidden;
     background-color: transparent;
-    color: #ffffff;
+    color: #000000;
     cursor: pointer;
-    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); */
+
 }
 
 ul.horizontal li {
@@ -65,29 +48,53 @@ ul.horizontal li {
     color: #d01010;
 }
 
-/* Content */
-
-.container-bg {
-    height: 250px;
+.rounded-image,
+.bg-img {
     z-index: 1;
-    position: relative;
 }
+
+/* Content */
+/* .container-bg {
+    position: relative;
+} */
 
 .rounded-image {
     z-index: 1;
-    width: 130px;
-    height: 130px;
+
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    /* สีพื้นหลังรูปกลม */
     border-radius: 50%;
+    /* ทำให้รูปกลม */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.rounded-image img {
+
+.bg-img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    /* background-image: url('CyBg.jpg'); */
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
+}
+
+.bg-img img {
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+
+section img {
+    width: 100%;
+
 }
 
 .carousel {
@@ -102,8 +109,6 @@ ul.horizontal li {
     width: 50%;
     text-align: center;
 }
-
-.welcome p {}
 
 .btn-floating {
     position: fixed;
@@ -156,8 +161,48 @@ li img {
     }
 }
 
-
 /* debug layout style */
 .debug-boder {
     border: blue 2px solid;
 }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <span class="logo">T</span>
+      <ul class="horizontal">
+        <li>Home</li>
+        <li>About</li>
+        <li>Skill</li>
+        <li>Resume</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container-bg">
+      <div class="rounded-image"></div>
+    </div>
+  </section>
+
+  <section class="content">
+    <article class="about debug-boder " id="about">
+      <h3>About Me</h3>
+      <span>Hi! My name ...</span> <br />
+      <p id="text"></p>
+    </article>
+  
+  </section>
+
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>
